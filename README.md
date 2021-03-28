@@ -40,6 +40,8 @@ $$
 \end{eqnarray}
 $$
 
+> Note: use eg. `pandoc -s -o README.html README.me --mathjax` to get the math rendered properly...
+
 1. The candidates $V$ can be obtained from a _vocabulary_.
 2. The probability $P(w)$ of a word $w$ can be _learned (counted) from data_.
 3. The probability $P(x\|w)$ is more complicated... It could be learned from data, but we could also use a _heuristic_ that relates to the edit distance, e.g. rank by distance.
