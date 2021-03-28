@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="assignment-1-dynamic-programming">Assignment 1: Dynamic Programming</h1>
+<h2 id="edit-distances">1. Edit Distances</h2>
+<p>Implement the <a href="https://en.wikipedia.org/wiki/Hamming_distance">Hamming</a> and <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein</a> (edit) distances and compute tem for the for the following word pairs. It may help to compute them by hand first.</p>
+<figure>
+<img src="res/97090.jpg" alt="kühler schrank, schüler krank" /><figcaption aria-hidden="true">kühler schrank, schüler krank</figcaption>
+</figure>
+<figure>
+<img src="res/97222.jpg" alt="nicht ausgeloggt, licht ausgenockt" /><figcaption aria-hidden="true">nicht ausgeloggt, licht ausgenockt</figcaption>
+</figure>
+<figure>
+<img src="res/97669.jpg" alt="gurken schaben, schurkengaben" /><figcaption aria-hidden="true">gurken schaben, schurkengaben</figcaption>
+</figure>
+<p>Aside from computing the distance (which is a scalar), do the backtrace and compute the edit transcript (and thus alignment).</p>
+<p>Please use <a href="src/1-3_autocorrect.py">1-3_autocorrect.py</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hamming(s1: <span class="bu">str</span>, s2: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> levenshtein(s1: <span class="bu">str</span>, s2: <span class="bu">str</span>) <span class="op">-&gt;</span> (<span class="bu">int</span>, <span class="bu">str</span>):</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<h2 id="basic-spelling-correction-using-edit-distance">2. Basic Spelling Correction using Edit Distance</h2>
+<p>For spelling correction, we will use prior knowledge, to put <em>some</em> learning into our system.</p>
+<p>The underlying idea is the <em>Noisy Channel Model</em>, that is: The user <em>intends</em> to write a word <code>w</code>, but through some noise in the process, happens to type the word <code>x</code>.</p>
+<p>The correct word <span class="math inline">\(\hat{w}\)</span> is that word, that is a valid candidate and has the highest probability:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\DeclareMathOperator*{\argmax}{argmax}
+\hat{w} &amp; = &amp; \argmax_{w \in V} P(w | x) \\
+        &amp; = &amp; \argmax_{w \in V} \frac{P(x|w) P(w)}{P(x)} \\
+        &amp; = &amp; \argmax_{w \in V} P(x|w) P(w)
+\end{eqnarray}
+\]</span></p>
+<ol type="1">
+<li>The candidates <span class="math inline">\(V\)</span> can be obtained from a <em>vocabulary</em>.</li>
+<li>The probability <span class="math inline">\(P(w)\)</span> of a word <span class="math inline">\(w\)</span> can be <em>learned (counted) from data</em>.</li>
+<li>The probability <span class="math inline">\(P(x\|w)\)</span> is more complicated… It could be learned from data, but we could also use a <em>heuristic</em> that relates to the edit distance, e.g. rank by distance.</li>
+</ol>
+<p>You may use <a href="http://norvig.com/ngrams/">Peter Norvig’s count_1w.txt</a> file, <a href="res/count_1w.tar.bz2">local mirror</a>. Note that it may help to restrict to the first 10k words to get started.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> suggest(w: <span class="bu">str</span>, dist, max_cand<span class="op">=</span><span class="dv">5</span>) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<p>Please use <a href="src/1-3_autocorrect.py">1-3_autocorrect.py</a>.</p>
+<h3 id="food-for-thought">Food for Thought</h3>
+<ul>
+<li>How would you modify the implementation so that it works fast for large lexica (eg. the full file above)?</li>
+<li>How would you modify the implementation so that it works “while typing” instead of at the end of a word?</li>
+<li>How do you handle unknown/new words?</li>
+</ul>
+<h2 id="needleman-wunsch-keyboard-aware-auto-correct">3. Needleman-Wunsch: Keyboard-aware Auto-Correct</h2>
+<p>In the parts 1 and 2 above, we applied uniform cost to all substitutions. This does not really make sense if you look at a keyboard: the QWERTY layout will favor certain substitutions (eg. <em>a</em> and <em>s</em>), while others are fairly unlikely (eg. <em>a</em> and <em>k</em>).</p>
+<p>Implement the <a href="https://en.wikipedia.org/wiki/Needleman–Wunsch_algorithm">Needleman-Wunsch algorithm</a> which is very similar to the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a>, however it doesn’t <em>minimize the cost</em> but <em>maximizes the similarity</em>. For a good measure of similarity, implement a metric that computes a meaningful weight for a given character substitution. How does your <code>suggest</code> behave using this metric?</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nw(s1: <span class="bu">str</span>, s2: <span class="bu">str</span>, d: <span class="bu">float</span>, sim) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<p>Please use <a href="src/1-3_autocorrect.py">1-3_autocorrect.py</a>.</p>
+<h3 id="food-for-thoughts">Food for Thoughts</h3>
+<ul>
+<li>What could be better heuristics for similarity resp. cost of substitution than the one above?</li>
+<li>What about capitalization, punctiation and special characters?</li>
+<li>What about swipe-to-type?</li>
+</ul>
+<h2 id="dynamic-time-warping-isolated-word-recognition">4. Dynamic Time Warping: Isolated Word Recognition</h2>
+<p>Due to the relatively large sample number (e.g. 8kHz), performing <a href="https://en.wikipedia.org/wiki/Dynamic_time_warping">DTW</a> on the raw audio signal is not advised (feel free to try!). A better solution is to compute a set of features; here we will extract <a href="https://en.wikipedia.org/wiki/Mel-frequency_cepstrum">mel-frequency cepstral coefficients</a> over windows of 25ms length, shifted by 10ms. Recommended implementation is <a href="https://librosa.org/doc/main/generated/librosa.feature.mfcc.html">librosa</a>.</p>
+<p>Please use <a href="src/4_iwr.py">4_iwr.py</a>.</p>
+<h3 id="data">Data</h3>
+<p>Download Zohar Jackson’s <a href="https://github.com/Jakobovski/free-spoken-digit-dataset">free spoken digit dataset</a>. There’s no need to clone, feel free to use a revision, like <a href="https://github.com/Jakobovski/free-spoken-digit-dataset/archive/refs/tags/v1.0.10.tar.gz">v1.0.10</a>. File naming convention is trivial (<code>{digitLabel}_{speakerName}_{index}.wav</code>); let’s restrict to two speakers, eg. <code>jackson</code> and <code>george</code>.</p>
+<h3 id="implement-dtw">Implement DTW</h3>
+<p><a href="https://en.wikipedia.org/wiki/Dynamic_time_warping">DTW</a> is closely related to <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a> and <a href="https://en.wikipedia.org/wiki/Needleman–Wunsch_algorithm">Needleman-Wunsch algorithm</a>. The main rationale behind DTW is that the two sequences are can be aligned but their speed and exact realization may very. In consequence, cost is not dependent on an edit operation but on a difference in observations.</p>
+<p>To verify your implementation, perform the following Experiment: For each speaker and digit, select one recording as reference and one as test.</p>
+<ol type="1">
+<li>Compute the DTW scores between each of the files.</li>
+<li>How do the values compare within and across speaker?</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> dtw(obs1: <span class="bu">list</span>, obs2: <span class="bu">list</span>, sim) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<h3 id="implement-a-dtw-based-isolated-word-recognizer">Implement a DTW-based Isolated Word Recognizer</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> recognize(obs: <span class="bu">list</span>, refs: <span class="bu">dict</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">    obs: input observations (mfcc)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">    refs: dict of (classname, observations) as references</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">    returns classname where distance of observations is minumum</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<h3 id="discuss-your-implementation">Discuss your Implementation</h3>
+<ul>
+<li>What are inherent issues of this approach?</li>
+<li>How does this algorithm scale with a larger vocabulary, how can it be improved?</li>
+<li>How can you extend this idea to continuous speech, ie. ?</li>
+</ul>
+<h2 id="decoding-states-dtmf">5. Decoding States: DTMF</h2>
+<p><a href="https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling">Dual-tone multi-frequency DTMF</a> signaling is an old way of transmitting dial pad keystrokes over the phone. Each key/symbol is assigned a frequency pair: <code>[(1,697,1209), (2,697,1336), (3,697,1477), (A,697,1633), (4,770,1209), (5,770,1336), (6,770,1477), (B,770,1633), (7,852,1209), (8,852,1336), (9,852,1477), (C,852,1633), (*,941,1209), (0,941,1336), (#,941,1477), (D,941,1633)]</code>. You can generate some DTMF sequences online, eg. <a href="https://www.audiocheck.net/audiocheck_dtmf.php" class="uri">https://www.audiocheck.net/audiocheck_dtmf.php</a></p>
+<p>For feature computation, use librosa to compute the power spectrum (<code>librosa.stft</code> and <code>librosa.amplitude_to_db</code>), and extract the approx. band energy for each relevant frequency.</p>
+<blockquote>
+<p>Note: It’s best to identify silence by the overall spectral energy and to normalize the band energies to sum up to one.</p>
+</blockquote>
+<p>To decode DTMF sequences, we can use again dynamic programming, this time applied to states rather than edits. For DTMF sequences, consider a small, fully connected graph that has 13 states: 0-9, A-D, *, # and <em>silence</em>. As for the DP-matrix: the rows will denote the states and the columns represent the time; we will decode left-to-right (ie. time-synchronous), and at each time step, we will have to find the best step forward. The main difference to edit distances or DTW is, that you may now also “go up” in the table, ie. change state freely. For distance/similarity, use a template vector for each state that has <code>.5</code> for those two bins that need to be active.</p>
+<p>When decoding a sequence, the idea is now that we remain in one state as long as the key is pressed; after that, the key may either be released (and the spectral energy is close to 0) hence we’re in pause, or another key is pressed, hence it’s a “direct” transition. Thus, from the backtrack, collapse the sequence by digit and remove silence, eg. <code>44443-3-AAA</code> becomes <code>433A</code>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> decode(y: np.ndarray, sr: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">list</span>:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;y is input signal, sr is sample rate; returns list of DTMF-signals (no silence)&quot;&quot;&quot;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div>
+<p>Please use <a href="src/5_dtmf.py">5_dtmf.py</a>.</p>
+</body>
+</html>
